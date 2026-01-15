@@ -30,7 +30,7 @@ def main():
 
         if choice == "add":
             while True:
-                task = input("Enter task to add (or type back): ").strip()
+                task = input("Enter task to add (or type back): ").lower().strip()
 
                 if task == "back":
                     break
@@ -48,7 +48,7 @@ def main():
 
             while True:
                 view_tasks(task_list)
-                task = input("Enter task to delete (or type back): ").strip()
+                task = input("Enter task to delete (or type back): ").lower().strip()
 
                 if task == "back":
                     break
